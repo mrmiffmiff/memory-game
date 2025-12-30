@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import './App.css'
+import Header from './components/Header';
 
 function App() {
   const [score, setScore] = useState(0);
@@ -7,8 +8,10 @@ function App() {
 
   return (
     <>
-      <h1>Memory Game</h1>
-      <h2>There will be scores</h2>
+      <Header
+        score={score}
+        highScore={highScore}
+      />
     </>
   )
 }
