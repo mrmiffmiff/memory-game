@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import placeholder from '../assets/images/Placeholder.png';
 import '../styles/Card.css'
 
-export default function Card({ obj }) {
+export default function Card({ obj, reaction }) {
     const [imageUrl, setImageUrl] = useState(placeholder);
     const [descText, setDescText] = useState('Placeholder Image');
     const apiKey = 'AIzaSyBmLdIvQ6mPAcZdtUorTyGJc2fedR8hz_Q'; // I'm aware this is insecure but this is for a free API used in an app that nobody is going to use
@@ -42,7 +42,7 @@ export default function Card({ obj }) {
     }, [obj.id, obj.name]);
 
     return (
-        <button type="button">
+        <button type="button" onClick={() => reaction(obj)}>
             <img src={imageUrl} alt={descText} />
             <span>{descText}</span>
         </button>
