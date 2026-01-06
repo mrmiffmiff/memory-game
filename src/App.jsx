@@ -35,7 +35,7 @@ function App() {
         score={score}
         highScore={highScore}
       />
-      <div className='cards' style={{ display: "flex", }} >
+      <div className='cards'>
         {
           deck.map((card) => (
             <Card
