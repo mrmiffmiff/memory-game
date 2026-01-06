@@ -1,0 +1,53 @@
+.info-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.info-screen p {
+    color: var(--primary-red);
+    font-size: 1.3rem;
+    font-weight: 500;
+    line-height: 1.6;
+    margin: 0;
+    letter-spacing: -0.01em;
+}
+
+.info-screen button {
+    width: auto;
+    min-width: 200px;
+    height: auto;
+    padding: 1rem 2.5rem;
+    background: linear-gradient(135deg, var(--card-bg-start) 0%, var(--card-bg-end) 100%);
+    border: 1px solid var(--card-border);
+    border-radius: 12px;
+    color: var(--primary-red-bright);
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 6px var(--shadow-dark);
+}
+
+.info-screen button:hover {
+    background: linear-gradient(135deg, var(--card-hover-start) 0%, var(--card-hover-end) 100%);
+    box-shadow: 0 12px 24px var(--shadow-red), 0 8px 16px var(--shadow-darker);
+    transform: translateY(-4px);
+    border-color: var(--card-border-hover);
+}
+
+.info-screen button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px var(--shadow-red-light);
+}
+
+.info-screen button:focus-visible {
+    outline: 2px solid var(--primary-red);
+    outline-offset: 4px;
+}
