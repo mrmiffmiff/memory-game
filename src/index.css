@@ -77,11 +77,6 @@
     --shadow-darker: rgba(0, 0, 0, 0.4);
     --shadow-red: rgba(230, 57, 70, 0.3);
     --shadow-red-light: rgba(230, 57, 70, 0.2);
-
-    /* Glass Morphism (Optional) */
-    --card-glass-bg: rgba(43, 45, 66, 0.7);
-    --card-glass-hover: rgba(53, 55, 82, 0.8);
-    --card-glass-border: rgba(230, 57, 70, 0.2);
 }
 
 body {
