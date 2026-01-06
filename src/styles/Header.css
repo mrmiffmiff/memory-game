@@ -2,10 +2,38 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    padding: 1.5rem 2rem;
+    align-items: center;
+}
+
+h1 {
+    background: linear-gradient(180deg,
+            var(--primary-red-bright) 0%,
+            var(--primary-red-dark) 50%,
+            var(--bg-gradient-end) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+    letter-spacing: -0.02em;
 }
 
 div.scores {
     display: flex;
     flex-direction: column;
     padding-right: 5px;
+    gap: 0.5rem;
+}
+
+.score,
+.high-score {
+    color: var(--primary-red);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.high-score {
+    color: var(--accent-red)
 }
